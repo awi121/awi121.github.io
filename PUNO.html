@@ -26,8 +26,8 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							Here is a similar project description in HTML format for PUNO:
-							<img src="images/PUNO/1.png">
+							
+							<span class="image fit"><img src="images/PUNO/1.png" alt="" class="center"/></span>
 							<h1>Physics Informed U-shaped Neural Operator (PUNO)</h1>
 							
 							<p>PUNO is a novel neural network architecture for solving partial differential equations (PDEs). It combines physics-based constraints with a data-driven U-shaped neural operator to learn mappings between function spaces.</p>
@@ -35,18 +35,18 @@
 							<p>PUNO first trains the neural operator on data and physics-based losses over a family of PDEs. This allows it to learn a general solution operator. The U-shaped architecture enables deeper learning while efficiently encoding information.</p> 
 							
 							<p>After this operator learning phase, PUNO fine-tunes the operator on a specific PDE instance using additional physics-informed losses. This helps overcome optimization difficulties faced by purely physics-informed networks.</p>
-							<img src="images/PUNO/2.png">
+							<span class="image fit"><img src="images/PUNO/2.png" alt="" class="center"/></span>
 							<h3>Our Work</h3>
 							
 							<p>We implemented PUNO and tested it on the 2D Darcy Flow equation, a linear elliptic PDE. We trained several variants, including vanilla data-driven operators (FNO, UNO) and physics-informed versions (PUNO).</p>
 							
 							<p>PUNO variants achieve lower loss compared to baseline UNO, indicating the physics-informed losses help optimize for the specific instance. However, FNO still achieves lowest loss likely due to its higher parameterization.</p> 
-							<img src="images/PUNO/3.png">
+							<span class="image fit"><img src="images/PUNO/3.png" alt="" class="center"/></span>
 							<h3>Results</h3>
 							
 							<p>We evaluated both the Lp physics-informed loss and MSE on the test instance. PUNO and PUNO-13 (deeper version) obtain lower Lp losses than vanilla UNO/UNO-13, showing the benefit of physics-based optimization.</p>
 							
-							<img src="images/PUNO/results.png">
+							<span class="image fit"><img src="images/PUNO/results.png" alt="" class="center"/></span>
 							
 			
 						</div>

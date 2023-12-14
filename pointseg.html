@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Attention-based Fusion Network for 3D Semantic Segmentation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html#one" class="title">Projects</a>
+				<nav>
+					<ul>
+						<li><a href="index.html" class="active">Home</a></li>
+						<li><a href="index.html#two" class="active">Resume</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							
+							<h1>Attention-based Fusion Network for 3D Semantic Segmentation</h1>
+							<span class="image fit"><img src="images/pointseg/3.png" alt="" class="center"/></span>
+							<p>This project presents a novel deep learning approach for semantic segmentation of LiDAR point clouds. Key aspects include:</p>
+							
+							<ul>
+							  <li>Projecting the 3D point cloud to 2D range images</li>
+							  <li>Applying self-attention to extract features from depth, spatial, and intensity data</li>
+							  <li>Fusing features using pairwise cross-attention</li>
+							  <li>Feeding fused features into a convolutional segmentation network</li>
+							  <li>Projecting 2D segmentation back to 3D point cloud</li>
+							</ul>
+							
+							<h3>Challenges</h3>
+							
+							<p>Processing large-scale, unordered 3D point clouds for segmentation poses difficulties. Our approach addresses challenges like:</p>
+							
+							<ul>
+							  <li>Heterogeneous modalities in LiDAR data</li>
+							  <li>Irregular distributions and densities of points</li>
+							  <li>Capturing local and global context</li>
+							</ul>
+							
+							<h3>Methods</h3>
+							<span class="image fit"><img src="images/pointseg/2.png" alt="" class="center"/></span>
+							<p>Our pipeline involves:</p>
+							
+							<ol>
+							  <li>Spherical projection to range images</li>
+							  <li>Self-attention feature encoding per modality</li>
+							  <li>Cross-attention feature fusion</li>
+							  <li>Convolutional segmentation module</li>
+							  <li>Projection back to 3D space</li>
+							</ol>
+							
+							<p>The self- and cross-attention mechanisms allow capturing non-local relationships in the data. Convolutional networks exploit local patterns.</p>
+							
+							<h3>Results</h3>
+							
+							<p>Our model achieves a mean IoU of 45.5 on SemanticKITTI test set, at 24 FPS. This demonstrates comparable accuracy to other projection-based methods, with improved efficiency.</p>
+							
+							<p>Ongoing work focuses on incorporating RGB data and post-processing to further improve segmentation performance.</p>
+							<span class="image fit"><img src="images/pointseg/1.png" alt="" class="center"/></span>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
