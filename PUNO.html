@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PUNO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html#one" class="title">Projects</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#two" class="active">Resume</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							Here is a similar project description in HTML format for PUNO:
+							<img src="images/PUNO/1.png">
+							<h1>Physics Informed U-shaped Neural Operator (PUNO)</h1>
+							
+							<p>PUNO is a novel neural network architecture for solving partial differential equations (PDEs). It combines physics-based constraints with a data-driven U-shaped neural operator to learn mappings between function spaces.</p>
+							
+							<p>PUNO first trains the neural operator on data and physics-based losses over a family of PDEs. This allows it to learn a general solution operator. The U-shaped architecture enables deeper learning while efficiently encoding information.</p> 
+							
+							<p>After this operator learning phase, PUNO fine-tunes the operator on a specific PDE instance using additional physics-informed losses. This helps overcome optimization difficulties faced by purely physics-informed networks.</p>
+							<img src="images/PUNO/2.png">
+							<h3>Our Work</h3>
+							
+							<p>We implemented PUNO and tested it on the 2D Darcy Flow equation, a linear elliptic PDE. We trained several variants, including vanilla data-driven operators (FNO, UNO) and physics-informed versions (PUNO).</p>
+							
+							<p>PUNO variants achieve lower loss compared to baseline UNO, indicating the physics-informed losses help optimize for the specific instance. However, FNO still achieves lowest loss likely due to its higher parameterization.</p> 
+							<img src="images/PUNO/3.png">
+							<h3>Results</h3>
+							
+							<p>We evaluated both the Lp physics-informed loss and MSE on the test instance. PUNO and PUNO-13 (deeper version) obtain lower Lp losses than vanilla UNO/UNO-13, showing the benefit of physics-based optimization.</p>
+							
+							<img src="images/PUNO/results.png">
+							
+			
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
